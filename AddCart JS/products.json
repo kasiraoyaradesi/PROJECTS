@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "name":" LD01 LOUNGE CHAIR",
+        "price": 200,
+        "image": "https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg"
+        
+    },
+    {
+        "id": 2,
+        "name":" LD02 LOUNGE CHAIR",
+        "price": 250,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRin-RHdvU8GYNk8I2YPre0yYYHCJlY9GuAbsYmBF-AOTXZQXEOrOjF-etRUFagA9Gx0NE&usqp=CAU"
+        
+    },
+    {
+        "id": 3,
+        "name":" LD03 LOUNGE CHAIR",
+        "price": 290,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-eIHhwNcb2J4-Kyy05L_vU0ZDR3mw32qGUsbktbPVfqYcL7DbhMu4hRNUrW1Z9SG2APE&usqp=CAU"
+    },
+    {
+        "id": 4,
+        "name":" LD04 LOUNGE CHAIR",
+        "price": 200,
+        "image": "https://img.lovepik.com/photo/48013/0627.jpg_wh860.jpg"
+    },
+    {
+        "id": 5,
+        "name":" LD05 LOUNGE CHAIR",
+        "price": 300,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&usqp=CAU"
+    },
+    {
+        "id": 6,
+        "name":" LD06 LOUNGE CHAIR",
+        "price": 200,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZT0qh99IVOiZ1NdoCsrP4_mSQzuAFRBVzw&usqp=CAU"
+    },
+    {
+        "id": 7,
+        "name":" LD07 LOUNGE CHAIR",
+        "price": 200,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMG5FJclJzuskuMJ36oCvHSkW6qeIMqdUsnQ&usqp=CAU"
+    },
+    {
+        "id": 8,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhLhj5LJhb3SS62KrbY73HBuc1EomaOqxXw&usqp=CAU"
+    }
+
+]

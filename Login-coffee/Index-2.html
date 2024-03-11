@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    /* Styling for the page */
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #f50c0c07;
+    }
+    .container {
+        max-width: 400px;
+        margin: 10px auto;
+        padding: 10px;
+        background-color: #e11b1b4f;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"], input[type="password"], input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #af7f4c;
+        color: white;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #761fcd;
+    }
+    h2 {
+        text-align: center;
+    }
+    footer {
+            text-align: center;
+            background-color: #cf1616;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+</style>
+</head>
+<body>
+<!-- Login form container -->
+<div class="container" id="loginContainer">
+    
+    <form id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a href="#" id="signupLink">Sign Up</a></p>
+</div>
+
+<!-- Sign up form container (Initially hidden) -->
+<div class="container" id="signupContainer" style="display:none;">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+        <input type="text" id="Firstname" placeholder="Firstname" required>
+        <input type="text" id="Lastname" placeholder="Lastname" required>
+        <input type="text" id="newUsername" placeholder="Username" required>
+        <input type="password" id="newPassword" placeholder="Password" required>
+        <input type="submit" value="Sign Up">
+    </form>
+</div>
+
+<footer>
+    &copy; 2024 Your Company Name. All rights reserved. | <a href="https://kasiraoyaradesi.github.io/ecomm-apps/">Coffee Shop</a>
+</footer>
+
+<script>
+// Event listener for sign up link
+
+document.getElementById("signupLink").onclick = functionName
+ function functionName() {
+    // Hide login form, show sign up form
+    document.getElementById("loginContainer").style.display = "none";
+    document.getElementById("signupContainer").style.display = "block";
+};
+
+// Event listener for sign up form submission
+
+document.getElementById("signupForm").addEventListener ("submit",  function(event) {
+    event.preventDefault();
+    // Get new username and password from form
+
+    var newUsername = document.getElementById("newUsername").value;
+    var newPassword = document.getElementById("newPassword").value;
+    
+    // Store new credentials in local storage
+
+    localStorage.setItem("username", newUsername);
+    localStorage.setItem("password", newPassword);
+
+    // Show success message, show login form, hide sign up form
+
+    alert("Account created successfully. Please login with your credentials.");
+    document.getElementById("loginContainer").style.display = "block";
+    document.getElementById("signupContainer").style.display = "none";
+});
+
+// Event listener for login form submission
+
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Get entered username and password
+
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Retrieve stored username and password from local storage
+
+    var storedUsername = localStorage.getItem("username");
+
+    var storedPassword = localStorage.getItem("password");
+
+    // Check if entered credentials match stored credentials
+    
+    if (username === storedUsername && password === storedPassword) {
+        // If match, show success message
+        alert("Login successful!");
+        window.location.href = "https://kasiraoyaradesi.github.io/ecomm-apps/";
+        // You can redirect to another page here
+    } else {
+        // If not match, show error message
+        alert("Incorrect credentials. Please try again.");
+    }
+});
+</script>
+</body>
+</html>

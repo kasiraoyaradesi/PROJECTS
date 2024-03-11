@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    border: none;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box; /* important */
+    outline: none;
+    text-decoration: none; /* important */
+    scroll-behavior: smooth;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(52, 52, 97);
+    color: black;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9% ;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+    
+
+}
+
+.header.sticky {
+    background: rgb(149, 108, 187);
+}
+
+.navbar a {
+    font-size:1.7rem;
+    color: aqua;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .3s;
+    
+    
+}
+
+.logo  {
+    font-size: 2.5rem;
+    color: aqua;
+    font-weight: 600;
+    margin-right: 3.5rem;
+
+}
+section {
+    min-height: 100vh;
+    padding: 10rem 9%;
+    
+}
+
+.navbar a:hover,
+.navbar a:active {
+       color: cadetblue;
+}
+#menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    display: none;
+    
+}
+
+.home{
+  
+  padding: 0 9%; 
+  align-items: center;
+  display: flex;
+  
+}
+.home-content{
+  max-width: 1000px;
+}
+
+.home-content h1 {
+    font-size: 43px;
+    font-weight: 10px;
+    line-height: 80px;
+    color: aliceblue;
+   
+}
+
+.home-content .text-animation {
+         position: relative;
+        
+} 
+
+.home-content .text-animation h2{
+    font-size: 20px;
+    font-weight: 700 px;
+    color: transparent;
+    -webkit-text-stroke: .7px red;
+}
+
+.home-content p {
+    font-size: 15px;
+    margin: 10px;
+    color: aliceblue;
+}
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    height: 35px;
+    
+    
+}
+
+.btn-box .box1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width : 120px;
+    height: 100%;
+   font-size: 20px;
+   font-weight: 1000px;
+   border: 3px solid;
+    border-radius: 10px;
+    background-color: rgba(19, 206, 206, 0.858);
+    z-index: 1;
+    transition: 5s;
+    overflow: hidden;
+    
+    
+}
+.btn-box .box1:nth-child(1){
+    background-color: transparent;
+    color: aqua ;
+
+}
+
+.btn-box .box1:nth-child(1):hover{
+
+   color:  rgb(52, 52, 97);
+  
+}
+.btn-box .box1:nth-child(1)::before{
+    background-color: aqua;
+   
+   
+   
+}
+
+
+.btn-box .box1:nth-child(2){
+    background-color: transparent;
+    color: aqua ;
+
+}
+
+.btn-box .box1:nth-child(2):hover{
+
+   color:  rgb(52, 52, 97);
+  
+}
+.btn-box .box1:nth-child(2)::before{
+    background-color: aqua;
+   
+   
+   
+}
+
+.btn-box .box1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width : 0;
+    height: 100%;
+    background-color:rgb(52, 52, 97);
+    transition: 5s;
+    z-index: -1;
+}
+.btn-box .box1:hover:before {
+    width : 100%;
+    
+}
+
+.home-social{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    bottom: 30px;
+    
+    
+}
+
+.home-social a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+    background-color: rgb(52, 52, 97);
+    transition: .5s;
+    color: red;
+
+
+}
+.home-social a:hover {
+     color: rgb(9, 9, 235) ;
+}
+
+.about {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    padding: 1rem;
+    
+
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 100px;
+    color: azure;
+    text-align: center;
+    padding: 10px 0px 120px 0px;
+}
+
+.about-img {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 90%;
+    
+
+}
+
+.about-img img {
+    width: 10%;
+    border-radius: 90%;
+    border: 2rem solid;
+    background-color: rgba(19, 206, 206, 0.858);
+    
+}
+
+.about-content {
+   
+    text-align: center;
+   
+    
+}
+
+.about-content h1{
+    font-size: 30px;
+    color: aliceblue;
+
+}
+
+.about-content p {
+    font-size: 15px;
+    margin: 20px 9%;
+    color: beige;
+}
+
+ .education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+
+ }
+ .education .education-row{
+    display: flex;
+    flex-direction: wrap;
+    gap: 5rem;
+
+ }
+ .education-row .education-column{
+    flex: 1 1 40rem;
+ }
+
+ .education-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+ }
+
+ .education-column .education-box{
+    border-left: 0.5rem solid gold;
+ }
+
+ .education-box .education-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: aqua;
+    border-radius: 50%;
+ }
+
+ .education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+ }
+ .education-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid gold;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+ }
+
+ .education-content .content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(195, 39, 39);
+    z-index: -1;
+    transition: 1s;
+ }
+
+ .education-content .content:hover::before{
+           width: 100%;
+ }
+
+ .education-content .content .year{
+    font-size: 1.5rem;
+    color: rgb(216, 112, 202);
+    padding-bottom: .5rem;
+ }
+
+ .education-content .content .year i {
+    padding-right: .5rem;
+ }
+
+ .education-content .content h3{
+    font-size: 2rem;
+ }
+
+ .skills {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: blueviolet;
+    
+ }
+ .tittle{
+    
+    color: red;
+    font-size: 25px;
+ }
+
+ .skills .skills-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+ }
+
+ .skills-row .skills-column{
+    flex: 1 1 40rem;
+ }
+
+ .skills-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+ }
+
+
+.skills-box .skills-content{
+    position: relative;
+    border: .2rem solid gold;
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+.skills-box .skills-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    transition: .5s;
+
+
+}
+
+.skills-box .skills-content:hover::before{
+    width: 100%;
+}
+
+.progress{
+    text-align: center;
+}
+
+.skills-content .progress{
+    padding: 1 rem 0;
+}
+
+.skills-content .progress h3{
+   font-size: 1.7rem;
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.skills-content .progress h3 span {
+    color:chartreuse;
+}
+
+.skills-content .progress .bar{
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid gold;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.skills-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: gold;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 80%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 65%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 65%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
+    width: 50%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span{
+    width: 55%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(7) .bar span{
+    width: 55%;
+}
+
+.Contact{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.Contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Contact form .input-box {
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+.Contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+
+.Contact form .input-box .input-field input ,
+
+.Contact form .textarea-field textarea{
+    width: 100%;
+    height:100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: aquamarine;
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid gold
+}
+
+
+
+.Contact form .input-box .input-field input::placeholder ,
+.Contact form .textarea-field textarea::placeholder {
+    color: rgb(246, 246, 246);
+}
+
+.Contact form .focus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: red;
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+
+.Contact form .input-box .input-field input:focus~.focus ,
+.Contact form .input-box .input-field input:valid~.focus,
+.Contact form .textarea-field textarea:focus~.focus,
+.Contact form .textarea-field textarea:valid~.focus {
+ 
+    width: 100%;
+}
+
+.Contact form .textarea-field {
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+
+
+.Contact form .textarea-field textarea {
+    resize: none;
+}
+
+.Contact form .btn-box.btns .btn {
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: blueviolet
+}
+
+.footer-text p {
+    font-size: 1.6rem ;
+}
+
+.footer-iconTop a {
+   position: relative;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   padding: .8rem;
+   border: .2rem solid gold;
+   background: gold;
+   border-radius: .6rem;
+   z-index: 1;
+   overflow: hidden;
+}
+
+.footer-iconTop a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: green ;
+    z-index: -1;
+    transition: .7s;
+
+
+}
+
+.footer-iconTop a:hover::before{
+    width: 100%;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: red;
+}
